@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawsome.com/release/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="/Project/Tekit.png">
+    <title>Tekit</title>
+    <style>
+        #header{
+            height: 80px;
+            margin-top: 8px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+        }
+        #mainprod{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+        }
+        .mainitem img{
+            border-radius: 15px;
+            height: 400px;
+            width: 400px;
+            cursor: pointer;
+        }
+        .mainitem{
+            margin-right: 20px;
+        }
+        .itemdetail{
+            margin-left: 20px;
+        }
+        .mainitem .adjimg{
+            height: 120px;
+            width: 100px;
+            margin-top: 10px;
+            border: 2px solid antiquewhite;
+        }
+        .itemdetail h2{
+            margin-top: 0px;
+        }
+        .itemdetail span{
+            opacity: 0.7;
+            font-weight: 600;
+        }
+        .itemdetail .disc{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: -10px;
+            margin-bottom: 4px;
+            color: #088178;
+        }
+        .itemdetail .price{
+            color: black;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .itemdetail .reduce{
+            color: #060101;
+            text-decoration: line-through;
+            opacity: .7;
+        }
+        #pddt .itm{
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
+        #value{
+            width: 35px;
+            text-align: center;
+        }
+        footer{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <section id="header">
+            <a href="#"><img src="/Project/Tekit.png" alt="There is an Image"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="cart.html"><img src="/Project/cart.png" title="Cart"></i></a></li>
+                </ul>
+            </div>
+        </section><br>
+        <section id="mainprod">
+            <div class="mainitem">
+                <img src="/Project/us-polo-shoes.png"><br>
+                <img src="/Project/us-polo-shoes-1.png" class="adjimg">
+                <img src="/Project/us polo shoes 2.png" class="adjimg">
+                <img src="/Project/us polo shoes 3.png" class="adjimg">
+                <!-- <img src="/Project/us polo shoes 4.png" class="adjimg"> -->
+                <img src="/Project/us polo shoes 5.png" class="adjimg">
+                <!-- <img src="/Project/us polo shoes 6.png" class="adjimg"> -->
+            </div>
+            <div class="itemdetail">
+                <span>US Polo</span>
+                <h4>Sergio 2.0 Slip On Shoes</h4>
+                <div class="disc">Special Offer 50% off</div>
+                <div>
+                    <div class="price">₹ 2,249</div>
+                    <div class="reduce">₹ 4,499</div>
+                </div>
+                <br>
+                <div>
+                    <input type="number" name="value" value="1" id="value">
+                    <button type="button" class="btn btn-outline-primary">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Buy Now</button>
+                </div>
+                <br>
+                <div>
+                    <span class="color">Colour
+                        <select name="color">
+                            <option value="Select">Select</option>
+                            <option value="Grey">Grey</option>
+                            <option value="Red">Red</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <span>Size
+                        <select name="size" >
+                            <option value="Select">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                    </span>
+                </div>
+                <br>
+                <div id="pddt">
+                    <span>Product details</span>
+                    <ul class="itm">
+                        <li><strong>Sole:</strong> Rubber</li>
+                        <li><strong>Closure:</strong> Pull On</li>
+                        <li><strong>Fit Type:</strong> Regular</li>
+                        <li><strong>Shoe Width:</strong> Medium</li>
+                        <li><strong>Department:</strong> Mens</li>
+                        <li><strong>Manufacturer:</strong> U.S. POLO ASSN.</li>
+                        <li><strong>US polo shoes</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section id="prod">
+            <!-- Male Section -->
+            <div class="item">
+                <img src="/Project/nike shoes.png"><br>
+                <span>Nike</span>
+                <h5>Run All Day Running</h5>
+                <div class="disc">Special Offer 40% off </div>
+                <div>
+                    <div class="price">₹ 2,999</div>
+                    <div class="reduce">₹ 4,999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/addidas shoes.png"><br>
+                <span>Addidas</span>
+                <h5>Adiprim M Charcoal</h5>
+                <div class="disc">Special Offer 46% off </div>
+                <div>
+                    <div class="price">₹ 2,999</div>
+                    <div class="reduce">₹ 5,599</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/bata shoes.png"><br>
+                <span>Bata</span>
+                <h5>Formal Dress Shoes</h5>
+                <div class="disc">Special Offer 10% off </div>
+                <div>
+                    <div class="price">₹ 899</div>
+                    <div class="reduce">₹ 999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/bedishoes.jpg"><br>
+                <span>Bedi</span>
+                <h5>Casual canvas shoes</h5>
+                <div class="disc">Special Offer 16% off </div>
+                <div>
+                    <div class="price">₹ 2,499</div>
+                    <div class="reduce">₹ 2,999</div>
+                </div>
+            </div>
+        </section><br>
+        <section id="prod">
+            <!-- Female Section -->
+            <div class="item">
+                <img src="/Project/sparkx wshoes.jpg"><br>
+                <span>Sparx</span>
+                <h5>Running Shoes</h5>
+                <div class="disc">Special Offer 40% off </div>
+                <div>
+                    <div class="price">₹ 1,199</div>
+                    <div class="reduce">₹ 1,999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/mochishoes.jpg"><br>
+                <span>Mochi</span>
+                <h5>Yellow Heels Sandal</h5>
+                <div class="disc">Special Offer 17% off </div>
+                <div>
+                    <div class="price">₹ 2,490</div>
+                    <div class="reduce">₹ 2,990</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/batawshoes.jpeg"><br>
+                <span>Bata</span>
+                <h5>BLUE BALLERINA</h5>
+                <div class="disc">Special Offer 12% off </div>
+                <div>
+                    <div class="price">₹ 1,039</div>
+                    <div class="reduce">₹ 1,299</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/calvinkevinwshoes.jpg"><br>
+                <span>Calvin Klein</span>
+                <h5>Women's Lydia Loafer</h5>
+                <div class="disc">Special Offer 50% off </div>
+                <div>
+                    <div class="price">₹ 3,160</div>
+                    <div class="reduce">₹ 6,320</div>
+                </div>
+            </div>
+        </section><br>
+        <section id="prod">
+            <!-- EarBuds Section -->
+            <div class="item">
+                <img src="/Project/samsungearbuds.jpg"><br>
+                <span>Samsung</span>
+                <h5>Galaxy BeanBuds Live</h5>
+                <div class="disc">Special Offer 70% off </div>
+                <div>
+                    <div class="price">₹ 4,790</div>
+                    <div class="reduce">₹ 15,999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/boatearbuds.jpg"><br>
+                <span>Boat</span>
+                <h5>Airdopes 170 TWS </h5>
+                <div class="disc">Special Offer 68% off </div>
+                <div>
+                    <div class="price">₹ 1,499</div>
+                    <div class="reduce">₹ 4,499</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/ptronearbuds.jpg"><br>
+                <span>pTron</span>
+                <h5>Bassbuds NYX In-Ear</h5>
+                <div class="disc">Special Offer 43% off </div>
+                <div>
+                    <div class="price">₹ 2,299</div>
+                    <div class="reduce">₹ 3,999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/boultearbuds.jpg"><br>
+                <span>Boult</span>
+                <h5>Z40 Zen ENC Mic</h5>
+                <div class="disc">Special Offer 70% off </div>
+                <div>
+                    <div class="price">₹ 1,499</div>
+                    <div class="reduce">₹ 4,999</div>
+                </div>
+            </div>
+        </section><br>
+        <section id="prod">
+            <!-- Neckband Section -->
+            <div class="item">
+                <img src="/Project/onepluswire.jpg"><br>
+                <span>OnePlus</span>
+                <h5>Bullets Z2 Bluetooth</h5>
+                <div class="disc">Special Offer 13% off </div>
+                <div>
+                    <div class="price">₹ 1,999</div>
+                    <div class="reduce">₹ 2,299</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/boatwire.jpg"><br>
+                <span>Boat</span>
+                <h5>Nirvana 525 ANC</h5>
+                <div class="disc">Special Offer 20% off </div>
+                <div>
+                    <div class="price">₹ 3,999</div>
+                    <div class="reduce">₹ 4,999</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/sonywire.jpg"><br>
+                <span>Sony</span>
+                <h5>WI-C100 Wireless</h5>
+                <div class="disc">Special Offer 40% off </div>
+                <div>
+                    <div class="price">₹ 1,668</div>
+                    <div class="reduce">₹ 2,790</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Project/jblwire.jpg"><br>
+                <span>JBL</span>
+                <h5>Tune 215BT In Ear</h5>
+                <div class="disc">Special Offer 33% off </div>
+                <div>
+                    <div class="price">₹ 1,999</div>
+                    <div class="reduce">₹ 2,999</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="col">
+                <img src="/Project/Tekit.png">
+                <h5>Contact</h5>
+                <p><strong>Address:</strong> Tekit Mart, JM Road, Shivaji Nagar, Pune 411004</p>
+                <p><strong>Phone:</strong> (+91)/1234567890/9087654321</p>
+                <p><strong>Open:</strong> 08:00AM - 06:00PM, Mon - Sat</p>
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i><ion-icon name="logo-facebook"></ion-icon></i>
+                    <i><ion-icon name="logo-instagram"></ion-icon></i>
+                    <i><ion-icon name="logo-youtube"></ion-icon></i>
+                    <i><ion-icon name="logo-twitter"></ion-icon></i>
+                    <i><ion-icon name="logo-whatsapp"></ion-icon></i>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.html">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term & Conditions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="login.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">Wish List</a>
+                <a href="#">Track Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col">
+                <h4>Install App</h4>
+                <p>From Google Play/ App Store</p>
+                <img class="app" src="/Project/apk.png">
+                <p> Secured Payment Gateways</p>
+                <img class="pay" src="/Project/secure pay.png">
+            </div>
+        </footer>
+    </div>
+    <script>
+        // let value = document.getElementById('value').value
+        // let addcart = document.querySelector('.btn btn-outline-primary')
+        // let itemdetail = document.querySelectorAll('.itemdetail')
+
+        // addcart.addEventListener('click', () => {
+        //     addcart.className(itemdetail)
+        // })
+
+        // onclick = function add_Item() {
+        //     document.appendChild
+        // }
+
+        
+    </script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

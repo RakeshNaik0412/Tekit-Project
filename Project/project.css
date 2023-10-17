@@ -1,0 +1,339 @@
+div.main{
+    height: 2000px;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* #navbar li img.freelohos.com {
+    height: 20px;
+    width: 20px;
+} */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 16px;
+    height: 3px;
+    background-color: #088178;
+    position: absolute;
+    bottom: 16px;
+    left: 30px;
+}
+
+/* Home Page */
+
+#hero{
+    background-image:url("hero1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 80% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+#hero h4{
+    margin: 8px;
+    padding-left: 150px;
+}
+
+#hero h2{
+    margin: 8px;
+    padding-left: 150px;
+    color: #f64646;
+}
+
+#hero h1{
+    margin: 8px;
+    padding-left: 150px;
+    color: #088178;
+}
+
+#hero p{
+    margin: 8px;
+    padding-left: 150px;
+}
+
+#hero button{
+    margin: 8px;
+    left: 200px;
+    position: relative;
+    border: 0px;
+    background-color: transparent;
+    text-size-adjust: 20px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#feature .fe-box{
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    padding: 15px 5px;
+    border: 1px solid #cce7d0;
+    margin: 30px 20px;
+    border-radius: 5px;
+    background-size: cover;
+}
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 20px rgba(78, 78, 78, 0.06);
+}
+#feature .fe-box img{
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#feature .fe-box h4{
+    color: #088178;
+    background-color: #fddde4;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+#feature .fe-box:nth-child(2) h4{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h4{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h4{
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h4{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h4{
+    background-color: #fff2e5;
+}
+#products{
+    text-align: center;
+}
+
+#prod h2,p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#prod .item{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(138, 85, 85);
+    border-radius: 15px;
+    margin-left: 30px;
+}
+#prod h2{
+    color: #f64646;
+}
+#prod p{
+    color: rgb(122, 78, 24);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#prod .item:hover{
+    box-shadow: 20px 20px 20px rgba(16, 16, 16, 0.06);
+}
+.item img{
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+}
+.item .disc{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -10px;
+    margin-bottom: 4px;
+}
+.item span{
+    opacity: .5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.item h4{
+    margin-top: 10px;
+}
+.item div{
+    color: #088178;
+    font-weight: 600;
+}
+.item div .price{
+    color: black;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item div .reduce{
+    color: #060101;
+    text-decoration: line-through;
+    opacity: .7;
+}
+
+
+
+/* About Us */
+#page-header.about-header{
+    background-image: url(us\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: -15px;
+}
+.know{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
+}
+
+/* Contact Us */
+
+#contact{
+    background-image: url(/Project/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: -15px;
+}
+.contact1{
+    color: rgb(181, 37, 142);
+    text-align: center;
+    padding-top: 144px;
+}
+#form-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    margin-bottom: 50px;
+}
+#form-details form{
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    padding-left: 40px;
+}
+#form-details div.map{
+    width: 55%;
+    height: 400px;
+    padding-right: 40px;
+}
+#form-details div.map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details form input, textarea{
+    width: 20%;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    width: 60px;
+    padding: 4px 4px;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 0;
+    
+
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.col a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+.app{
+    width: 200px;
+    height: 100px;
+}
+.pay{
+    width: 300px;
+    height: 100px;
+    margin-left: -40px;
+}
+
+
+
+
+/* @media screen and (max-width: 400px)
+{
+    div.main{
+        height: 1000px;
+        width:fit-content;
+    }
+    #header {
+        padding: 5px 0px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+        width: max-content;
+    }
+    #navbar li {
+        list-style-type: none;
+        position: relative;
+    }
+    
+    #navbar li a {
+        text-decoration: none;
+        font-size: 9px;
+        font-weight: 300;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+        width: max-content;
+    }
+} */

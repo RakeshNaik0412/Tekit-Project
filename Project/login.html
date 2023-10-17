@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawsome.com/release/v5.10.0/css/all.css">
+    <link rel="icon" href="/Project/Tekit.png">
+    <link rel="stylesheet" href="project.css">
+    <title>Tekit</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url(/Project/log\ in.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 400px;
+            height: 440px;
+            background: transparent;
+            border: 2px solid rgba(159, 90, 90, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 380px;
+            margin-top: 40px;
+            overflow: hidden;
+            transition: height .2s ease;
+        }
+
+        .wrapper.active{
+            height: 600px;
+        }
+
+        .wrapper:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        }
+
+        .wrapper .form-box.login {
+            transition: tranform .18s ease;
+            transform: translateX(0);
+        }
+
+        .wrapper.active .form-box.login{
+            transition: none;
+            transform: translateX(-400px);
+        }
+
+        .wrapper .form-box.register{
+            position: absolute;
+            transition: none;
+            transform: translateX(400px);
+        }
+
+        .wrapper.active .form-box.register {
+            transition: tranform .18s ease;
+            transform: translateX(0);
+        }
+
+        .wrapper .closeicon {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            width: 40px;
+            height: 45px;
+            font-size: 25px;
+        }
+
+        .form-box h2 {
+            color: rgb(203, 129, 16);
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid rgb(117, 35, 35);
+            margin: 30px 0;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            font-weight: 600px;
+            font-size: 16px;
+            color: rgb(121, 16, 163);
+            pointer-events: none;
+            transition: .5s;
+            background: transparent;
+        }
+
+        .input-box input:focus~label,
+        .input-box input:valid~label {
+            top: -5px;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600px;
+            color: rgb(168, 21, 60);
+            background: transparent;
+        }
+
+        .input-box .icon {
+            position: absolute;
+            right: 8px;
+            line-height: 60px;
+        }
+
+        .remember-forget label,
+        a {
+            color: rgb(162, 56, 11)
+        }
+
+        .login-register p {
+            color: rgb(49, 146, 184);
+        }
+        .login-register p a{
+            color: rgb(120, 29, 114);
+            text-decoration: none;
+        }
+        .login-register p a:hover{
+            text-decoration: underline;
+        }
+
+        .remember-forget a {
+            color: red;
+            text-decoration: none;
+        }
+        .remember-forget a:hover{
+            text-decoration: underline;
+        }
+
+        .btn  {
+            background: transparent;
+            color: #22ad35;
+            border: none;
+            margin-bottom: -15px;
+            text-decoration: none;
+        }
+        .btn a {
+            text-decoration: none;
+            color: rgb(171, 34, 137);
+        }
+        .btn:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="/Project/Tekit.png" alt="There is an Image"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="login.html">Log In</a></li>
+                <li><a href="cart.html"><img src="/Project/cart.png" title="Cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <span class="closeicon"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="em1" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="pd1" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <br>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn"><strong>
+                            <h3><a href="">Login</a></h3></strong>
+                    </button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link"><strong>Register</strong></a></p>
+                    </div>
+                </form>
+            </div>
+            <span class="closeicon"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-sharp"></ion-icon></span>
+                        <input type="uname" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
+                        <input type="number" required>
+                        <label>Mobile Number</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <button type="submit" class="btn"><strong>
+                            <h3>Register</h3>
+                        </strong>
+                    </button>
+                    <div class="login-register">
+                        <p>Alredy have an account?<a href="#" class="login-link"><strong>Login</strong></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </section>
+
+
+    <script>
+        // let username = document.getElementById("em1")
+        // let password = document.getElementById("pd1")
+        // let login = document.getElementById("l1")
+
+        // login.onclick = function(){
+        //     login.style.display = "none"
+        // }
+        const wrapper =  document.querySelector('.wrapper');
+        const loginlink =  document.querySelector('.login-link');
+        const registerlink =  document.querySelector('.register-link');
+        const closeicon = document.querySelector('.closeicon')
+
+        registerlink.addEventListener('click', () => {
+            wrapper.classList.add('active');
+        });
+
+        loginlink.addEventListener('click', () => {
+            wrapper.classList.remove('active');
+        });
+
+        closeicon.addEventListener('click', () => {
+            wrapper.classList.remove('active');
+        });
+
+
+    </script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

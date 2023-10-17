@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawsome.com/release/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="/Project/Tekit.png">
+    <title>Tekit</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 500px;
+        }
+
+        #header {
+            height: 80px;
+            margin-top: 8px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        footer {
+            top: 350px;
+        }
+
+        table {
+            margin-top: 20px;
+            box-sizing: border-box;
+            border-color: black;
+        }
+
+        table tbody {
+            text-align: center;
+            border-bottom: 1px solid black;
+            position: relative;
+        }
+
+        table thead {
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        table tbody td img {
+            height: 80px;
+            margin: 10px 0px;
+            border-radius: 10px;
+        }
+
+        /* .prdimg{
+            transition: height .2s ease-out;
+        }
+
+        .prdimg.active{
+            height: 0px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <section id="header">
+            <a href="#"><img src="/Project/Tekit.png" alt="There is an Image"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a class="active" href="cart.html"><img src="/Project/cart.png" title="Cart"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section>
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Image</th>
+                        <th style="width: 30%;">Product</th>
+                        <th style="width: 20%;">Price</th>
+                        <th style="width: 15%;">Quantity</th>
+                        <th style="width: 15%;">Remove</th>
+                    </tr>
+                </thead>
+                <tbody class="prdimg1">
+                    <tr>
+                        <td><img src="/Project/nike shoes.png"></td>
+                        <td>Nike RUNALLDAY Running Shoes</td>
+                        <td>₹ 3,849</td>
+                        <td><input type="number" placeholder="1" style="width: 40px; text-align: center;"></td>
+                        <td class="closeicon"><a href=""><ion-icon name="close-circle-outline"></ion-icon></a></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="prdimg2">
+                        <td><img src="/Project/woodland shoes.png"></td>
+                        <td>WoodLand Mulberry Brown Ankle Leather Boots</td>
+                        <td>₹ 2,399</td>
+                        <td><input type="number" placeholder="1" style="width: 40px; text-align: center;"></td>
+                        <td class="closeicon"><a href=""><ion-icon name="close-circle-outline"></ion-icon></a></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="prdimg">
+                        <td><img src="/Project/titanwatch.png"></td>
+                        <td>Titan Talk S 1.78" AMOLED Display</td>
+                        <td>₹ 9,999</td>
+                        <td><input type="number" placeholder="1" style="width: 40px; text-align: center;"></td>
+                        <td class="closeicon"><a href=""><ion-icon name="close-circle-outline"></ion-icon></a></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="prdimg">
+                        <td><img src="/Project/noisewatch.png"></td>
+                        <td>Noise ColorFit Vision 3 AMOLED</td>
+                        <td>₹ 4,999</td>
+                        <td><input type="number" placeholder="1" style="width: 40px; text-align: center;"></td>
+                        <td class="closeicon"><a href=""><ion-icon name="close-circle-outline"></ion-icon></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> -->
+        <section>
+            <div class="cart-items">
+                <!-- <div class="cart-item-name">Nike Shoes</div>
+                <div class="cart-item-price">$200</div>
+                <button class="remove-from-cart-btn" data-id="${item.id}">Remove</button> -->
+            </div>
+        </section>
+        <br>
+        <section>
+            <h5>More items to explore</h5>
+            <div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="col">
+                <img src="/Project/Tekit.png">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Tekit Mart, JM Road, Shivaji Nagar, Pune 411004</p>
+                <p><strong>Phone:</strong> (+91)/1234567890/9087654321</p>
+                <p><strong>Open:</strong> 08:00AM - 06:00PM, Mon - Sat</p>
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i><ion-icon name="logo-facebook"></ion-icon></i>
+                    <i><ion-icon name="logo-instagram"></ion-icon></i>
+                    <i><ion-icon name="logo-youtube"></ion-icon></i>
+                    <i><ion-icon name="logo-twitter"></ion-icon></i>
+                    <i><ion-icon name="logo-whatsapp"></ion-icon></i>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.html">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term & Conditions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="login.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">Wish List</a>
+                <a href="#">Track Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col">
+                <h4>Install App</h4>
+                <p>From Google Play/ App Store</p>
+                <img class="app" src="/Project/apk.png">
+                <p> Secured Payment Gateways</p>
+                <img class="pay" src="/Project/secure pay.png">
+            </div>
+        </footer>
+    </div>
+    <script>
+
+        // const addToCartBtn = document.querySelector('.add-to-cart-btn');
+        // const cartItems = [
+        //     {
+        //         ItemId: Nike,
+        //         ItemName: Shoes,
+        //         ItemPrice: 220
+        //     }
+        // ];
+
+        // addToCartBtn.addEventListener('click', function () {
+        //     const itemId = this.getAttribute('data-Id');
+        //     const itemName = this.getAttribute('data-name');
+        //     const itemPrice = this.getAttribute('data-price');
+
+        //     const item = {
+        //         id : ItemId,
+        //         name: ItemName,
+        //         price: ItemPrice
+        //     };
+
+        //     cartItem.push(item);
+
+        //     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        // });
+
+        // const cartItemsContainer = document.querySelector('.cart-items');
+        // const storedCartItems = JSON.parse(localStorage.getItem('cartItems'));
+        // if (storedCartItems) {
+        //     for (let i = 0; i < storedCartItems.length; i++) {
+        //         const item = storedCartItems[i];
+        //         const itemHTML = <div class = "cart-item">
+        //             <div class = "cart-item-name">${item.name}</div>
+        //             <div class = "cart-item-price">$${item.price.toFixed(2)}</div>
+        //             <button class = "remove-from-cart-btn" data-id = "${item.id}">Remove</button>
+        //             </div>;
+
+        //         cartItemsContainer.insertAdjacentHTML('beforeend', itemHTML);
+                
+        //     }
+        // }
+
+
+        // const removeFromCartBtns = document.querySelectorAll('.remove-from-cart-btn');
+
+        // for (let i = 0; i < removeFromCartBtns.length; i++) {
+        //     removeFromCartBtns[i].addEventListener('click', function() {
+        //     const itemId = this.getAttribute('data-id');
+        //     const itemIndex = cartItems.findIndex(item => item.id === itemId);
+
+        //  if (itemIndex !== -1) {
+        //     cartItems.splice(itemIndex, 1);
+        //     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        //     this.parentNode.remove();
+        //         }
+        //     });
+        // }
+
+
+
+
+        // const closeicon = document.querySelector('.closeicon');
+        // const prdimg1 = document.querySelector('.prdimg1')
+        // const prdimg2 = document.querySelector('.prdimg2')
+        // let cart = [
+        //     {
+        //         id : 1,
+        //         img : "nike shoes.png",
+        //         brand : "Nike RUNALLDAY Running Shoes",
+        //         price : "₹ 3,849",
+        //     }
+        // ]
+
+        // let a = document.write(cart)
+        
+        // closeicon.addEventListener('click', () => {
+        //     if (prdimg1=remove ) {
+        //         closeicon.classList.remove(prdimg1)
+        //     }
+            
+        // });
+
+        // window.onload = function(){
+        //     document.getElementById('closeicon').onclick = function(){
+        //         this.parentNode.parentNode.remove();
+        //         return false;
+        //     };
+        // };
+        
+    </script>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
